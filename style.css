@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(Photos/background.jpg) fixed no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container{
+    width: 90%;
+    margin:auto ;
+}
+
+/* Navigation */
+
+.navbar{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid  #fff ;
+}
+
+.list-item{
+    font-weight: 700;
+}
+
+
+/* Section */
+
+.hero{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+
+/* Left side */
+
+.left-side{
+    margin-top: 4rem;
+}
+
+.left-side h1{
+    font-size: 3.8rem;
+}
+
+.left-side button{
+    margin-top: 2rem;
+    padding: 10px 3rem;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+/* right side */
+
+.card{
+    background-color: rgba(255, 255, 255, 0.2);
+     padding: 1.5rem;
+}
+.first-card{
+    transform: translatex(4rem);
+    margin-bottom: 6rem;
+    width: 18rem;
+}
+
+.second-card{
+    margin-top: 1rem;
+    width: 16rem;
+    transform: translatex(-10rem);
+}
+
+.circle-line-2 {
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    background-color: #ffffff;
+    right: -36px;
+    top: 50px;
+    transform: rotate(-90deg);
+  }
+  
+  .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: -8px;
+  }
+
+  .circle-line-1 {
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    background-color: #ffffff;
+    top: 140px;
+    left: 190px;
+  }
+
+.icon{
+   background-color: #fff;
+   width: 40%;
+   color: #000;
+   padding: 2px 2rem;
+   border-radius: 35px;
+   margin-bottom: 1rem;
+   font-size: 2rem;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1110px)
+{
+    .left-side h1{
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 950px)
+
+{
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .left-side button {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width:730px)
+{
+    
+    .navbar{
+        display: block;
+        text-align: center;
+    
+    }
+    
+    .list{
+       margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 615px)
+{
+
+    .circle, .circle-line-1, .circle-line-2
+    {
+        display: none;
+        margin: 0;
+    }
+    .first-card, .second-card
+    {
+        transform: translateX(0);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .second-card
+    {
+        width: 18rem;
+    }
+    .list{
+        display: block;
+    }
+    .list-item{
+        margin-top: 1rem;
+    }
+
+    .left-side button{
+        padding: 10px 2rem;
+        border-radius: 20px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .icon{
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+}
